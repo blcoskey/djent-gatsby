@@ -23,7 +23,10 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="flex flex-col w-screen h-full bg-primary">
+    <div
+      className="flex flex-col w-full h-full bg-primary bg-fixed bg-center bg-cover overflow-y-scroll"
+      style={{ backgroundImage: `url(${louis})` }}
+    >
       <Header siteTitle={data.site.siteMetadata.title} />
       <MobileHeader siteTitle={data.site.siteMetadata.title} />
 
@@ -32,10 +35,7 @@ const Layout = ({ children }) => {
         params={particleConfig}
       />
 
-      <main
-        className="flex flex-grow w-full flex-col bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: `url(${louis})` }}
-      >
+      <main className="flex flex-grow w-full flex-col bg-opacity-0 z-10 bg-transparent bg-fixed">
         {children}
       </main>
 
