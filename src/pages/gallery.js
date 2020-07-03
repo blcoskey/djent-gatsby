@@ -3,12 +3,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
 import { instruments } from "../content"
+import Image from "../components/image"
 
 const Gallery = () => (
   <Layout>
     <SEO title="Gallery" />
     <div className="mt-32"></div>
-    {instruments.map(({ header, images, name }) => {
+    {instruments.map(({ header, images, name, alt = [] }) => {
       return (
         <div
           key={name}
@@ -16,7 +17,7 @@ const Gallery = () => (
         >
           <h1 className="mx-10 mt-10 mb-3 text-1xl font-bold">{header}</h1>
           <div className="mx-4 p-4 text-left text-gray-900 text-lg">
-            <img src={images[0]} className="w-full" />
+            <Image filename={images[0]} alt={alt} />
             <Link
               className="text-blue-600 cursor-pointer"
               to={`/instrument/${name}`}

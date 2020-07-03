@@ -3,6 +3,7 @@ import Section from "../components/section"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { Link } from "gatsby"
 
 const header = "Contact"
 const content = (
@@ -15,22 +16,32 @@ const content = (
       </span>
     </div>
     <div className="flex flex-row justify-between text-3xl">
-      <FontAwesomeIcon
+      <a
         className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
-        icon={faEnvelope}
-      />
-      <FontAwesomeIcon
+        href="mailto:blcoskey@gmail.com"
+      >
+        <FontAwesomeIcon className=" no-selecto-bro" icon={faEnvelope} />
+      </a>
+      <a
         className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
-        icon={faPhone}
-      />
-      <FontAwesomeIcon
+        href="tel:+27 71 126 6800"
+      >
+        <FontAwesomeIcon className=" no-selecto-bro" icon={faPhone} />
+      </a>
+      <a
         className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
-        icon={faFacebookF}
-      />
-      <FontAwesomeIcon
+        href="https://www.facebook.com/djoburgdjentsZA"
+        target="_blank"
+      >
+        <FontAwesomeIcon className=" no-selecto-bro" icon={faFacebookF} />
+      </a>
+      <a
         className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
-        icon={faInstagram}
-      />
+        href="https://www.instagram.com/djoburgdjents_za"
+        target="_blank"
+      >
+        <FontAwesomeIcon className="no-selecto-bro" icon={faInstagram} />
+      </a>
     </div>
   </div>
 )

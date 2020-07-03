@@ -2,12 +2,13 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { instruments } from "../content"
+import Image from "../components/image"
 
 const Instrument = ({ location: { pathname } = {} }) => {
   const lastIndex = pathname.lastIndexOf("/")
   const item = pathname.slice(lastIndex + 1, pathname.length)
   const instrument = instruments.find(({ name }) => name === item)
-  const { images = [], header, blurb, specs = [] } = instrument || {}
+  const { images = [], header, blurb, specs = [], alt } = instrument || {}
   return (
     <Layout>
       <SEO title="Instrument" />
@@ -24,8 +25,9 @@ const Instrument = ({ location: { pathname } = {} }) => {
         ))}
         <h1 className="mx-10 mt-10 mb-3 text-1xl font-bold">Images</h1>
         {images.map((x, index) => (
-          <img
-            src={x}
+          <Image
+            filename={x}
+            alt={alt}
             className="object-cover w-full mt-2"
             key={`spec${index}`}
           />

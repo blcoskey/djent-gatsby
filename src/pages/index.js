@@ -6,7 +6,6 @@ import Home from "./home"
 import About from "./about"
 import Contact from "./contact"
 import Gear from "./gear"
-import Background from "../components/background"
 
 const IndexPage = props => (
   <Layout>

@@ -21,9 +21,9 @@ const BackgroundSection = ({ className, children }) => (
       return (
         <BackgroundImage
           Tag="section"
-          className="w-full bg-cover bg-fixed"
+          className="w-full bg-cover bg-center bg-fixed"
           fluid={imageData}
-          backgroundColor={`#040e18`}
+          backgroundColor={`#d86c9e`}
         >
           {children}
         </BackgroundImage>

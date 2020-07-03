@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -13,6 +13,7 @@ import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import Background from "./background"
 
 const Layout = ({ children }) => {
+  const [darkmode, setDarkmode] = useState(false)
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -27,7 +28,11 @@ const Layout = ({ children }) => {
     <div className="flex flex-col w-full h-full">
       <Background>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <MobileHeader siteTitle={data.site.siteMetadata.title} />
+        <MobileHeader
+          siteTitle={data.site.siteMetadata.title}
+          darkmode={darkmode}
+          toggleDarkmode={() => setDarkmode(!darkmode)}
+        />
         <Particles
           canvasClassName="fixed w-full h-full z-0"
           params={particleConfig}
@@ -40,22 +45,41 @@ const Layout = ({ children }) => {
         <footer className="text-white text-center w-full bg-gray-800 text-1xl flex flex-col z-10">
           <div className="flex flex-col">
             <div className="w-full flex flex-row text-center  items-end justify-around self-end mb-2 mt-4">
-              <FontAwesomeIcon
+              <a
                 className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
-                icon={faEnvelope}
-              />
-              <FontAwesomeIcon
+                href="mailto:blcoskey@gmail.com"
+              >
+                <FontAwesomeIcon
+                  className=" no-selecto-bro"
+                  icon={faEnvelope}
+                />
+              </a>
+              <a
                 className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
-                icon={faPhone}
-              />
-              <FontAwesomeIcon
+                href="tel:+27 71 126 6800"
+              >
+                <FontAwesomeIcon className=" no-selecto-bro" icon={faPhone} />
+              </a>
+              <a
                 className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
-                icon={faFacebookF}
-              />
-              <FontAwesomeIcon
+                href="https://www.facebook.com/djoburgdjentsZA"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  className=" no-selecto-bro"
+                  icon={faFacebookF}
+                />
+              </a>
+              <a
                 className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
-                icon={faInstagram}
-              />
+                href="https://www.instagram.com/djoburgdjents_za"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  className="no-selecto-bro"
+                  icon={faInstagram}
+                />
+              </a>
             </div>
           </div>
           <div>

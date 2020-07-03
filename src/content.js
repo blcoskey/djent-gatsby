@@ -1,28 +1,14 @@
-import bassGtr1 from "./images/instruments/bass-gtr-1.jpg"
-import bassGtr2 from "./images/instruments/bass-gtr-2.jpg"
-import bassGtr3 from "./images/instruments/bass-gtr-3.jpg"
-
-import chrono1 from "./images/instruments/chrono-1.jpg"
-import chrono2 from "./images/instruments/chrono-2.jpg"
-import chrono3 from "./images/instruments/chrono-3.jpg"
-
-import goliath1 from "./images/instruments/goliath-gtr-1.jpg"
-import goliath2 from "./images/instruments/goliath-gtr-2.jpg"
-
-import sx1 from "./images/instruments/sx-gtr-1.jpg"
-import sx2 from "./images/instruments/sx-gtr-2.jpg"
-import sx3 from "./images/instruments/sx-gtr-3.jpg"
-
-import themis1 from "./images/instruments/themis-1.jpg"
-import themis2 from "./images/instruments/themis-2.jpg"
-import themis3 from "./images/instruments/themis-3.jpg"
-
 export const instruments = [
   {
     name: "ormsby-bass-gtr-6",
-    images: [bassGtr1, bassGtr2, bassGtr3],
+    images: [
+      "instruments/bass-gtr-1.jpg",
+      "instruments/bass-gtr-2.jpg",
+      "instruments/bass-gtr-2.jpg",
+    ],
+    alt: "djent 6 string bass ormsby south africa",
     blurb:
-      'Despite being a custom shop based in Perth, Australia, instruments from Ormsby\'s GTR line are made in limited batches by WMI in South Korea. These guitars feature custom-level specs & quality at a fraction of the price, and are unique to their "runs". As of 2020, only 1 bass run has been manufactured.',
+      'Despite being a custom shop based in Perth, Australia, instruments from Ormsby\'s GTR line are made in limited batches by WMI in South Korea. These guitars feature custom-level specs & quality at a fraction of the price, and are unique to their "runs". As of 2020, only 1 bass run has been manufactured',
     header: "ORMSBY BASS GTR 6, DRAGONBURST",
     specs: [
       '25.5"-28.2" multiscale spread',
@@ -37,7 +23,12 @@ export const instruments = [
   },
   {
     name: "overload-chrono-bass",
-    images: [chrono1, chrono2, chrono3],
+    images: [
+      "instruments/chrono-1.jpg",
+      "instruments/chrono-2.jpg",
+      "instruments/chrono-3.jpg",
+    ],
+    alt: "djent 6 string bass overload south africa",
     blurb:
       "The Chrono is one of Overload's bass models, and is my personal favourite. The body shape is tasteful & refined, with the intuitive electronics allowing for a wide array of tonal capabilities. This Chrono was one of just 2 made in 2019 featuring a multiscale design.",
     header: "OVERLOAD CHRONO 5, SATIN BLURPLEBURST",
@@ -56,8 +47,9 @@ export const instruments = [
     link: "http://www.overloadguitars.com",
   },
   {
-    name: "ormsby-goliath-gtr-6",
-    images: [goliath1, goliath2],
+    name: "ormsby-goliath-gtr-8",
+    images: ["instruments/goliath-gtr-1.jpg", "instruments/goliath-gtr-2.jpg"],
+    alt: "djent headless 8 string south africa",
     blurb:
       "The Goliath is Ormsby's headless guitar, with the GTR iterations also being manufactured at WMI. The chambered bodies are light & resonant with an ergonomic shape, and the custom-spec pickups are very articulate. This particular Goliath GTR is from run 9.",
     header: "ORMSBY GOLIATH GTR 8, SATIN SEAFOAM",
@@ -74,7 +66,12 @@ export const instruments = [
   },
   {
     name: "sx-gtr",
-    images: [sx1, sx2, sx3],
+    images: [
+      "instruments/sx-gtr-1.jpg",
+      "instruments/sx-gtr-2.jpg",
+      "instruments/sx-gtr-3.jpg",
+    ],
+    alt: "djent guitar bariton south africa",
     blurb:
       "To celebrate a decade of multiscale, Ormsby produced a super limited batch of guitars reminiscent of the one that started it all. With its wenge neck, 29 frets & HS configuration, it was unchartered territory and would go on to become a staple amongst guitar enthusiasts worldwide.",
     header:
@@ -92,7 +89,12 @@ export const instruments = [
   },
   {
     name: "overload-themis",
-    images: [themis1, themis2, themis3],
+    images: [
+      "instruments/themis-1.jpg",
+      "instruments/themis-2.jpg",
+      "instruments/themis-3.jpg",
+    ],
+    alt: "djent 7 string headless guitar south africa",
     blurb:
       "Overload Guitars is a boutique-level custom shop based in Rome, Italy. All the instruments are fully customizable & hand-built from materials of the highest quality. The Themis is their headless model, and is available as anything from a strat-scale 6-string to a monstrous multiscale 8.",
     header: "OVERLOAD THEMIS 7, HAWAII GREENBURST",

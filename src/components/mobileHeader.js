@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons"
 
-const Header = () => {
+const Header = ({ darkmode, toggleDarkmode }) => {
   const [expand, setExpand] = useState("init")
   const [menuVisibility, setMenuVisiblity] = useState("invisible")
   const [menuStyle, setMenuStyle] = useState("opacity-0")
@@ -43,6 +43,21 @@ const Header = () => {
     }
   }, [expand])
 
+  const getLogoRotation = () => {
+    if (expand === "close" || expand === "init") {
+      if (darkmode) {
+        return "rotate-75"
+      }
+      return "rotate-360"
+    }
+
+    if (darkmode) {
+      return "rotate-75"
+    }
+
+    return "rotate-0"
+  }
+
   // Fades in menu
   useEffect(() => {
     if (menuVisibility === "visible") {
@@ -68,9 +83,10 @@ const Header = () => {
             alt="djent-logo"
             className={
               expand === "close" || expand === "init"
-                ? "w-24 m-5 ml-6 transition-transform duration-300 transform rotate-360"
-                : "w-24 m-5 ml-6 transition-transform duration-300 transform rotate-0"
+                ? `w-24 m-5 ml-6 transition-transform duration-300 transform ${getLogoRotation()}`
+                : `w-24 m-5 ml-6 transition-transform duration-300 transform ${getLogoRotation()}`
             }
+            onClick={toggleDarkmode}
           />
           <div className="h-12 flex self-center text-black text-4xl translate-y-0 cursor-pointer">
             <FontAwesomeIcon
