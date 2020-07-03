@@ -121,22 +121,32 @@ const Header = ({ darkmode, toggleDarkmode }) => {
         </div>
         <div className="absolute w-full bottom-0">
           <div className="w-full flex flex-row text-center text-3xl items-end justify-around self-end mb-4">
-            <FontAwesomeIcon
-              className="transition duration-500 transform hover:-translate-y-1 z-50 cursor-pointer no-selecto-bro"
-              icon={faEnvelope}
-            />
-            <FontAwesomeIcon
-              className="transition duration-500 transform hover:-translate-y-1 z-50 cursor-pointer no-selecto-bro"
-              icon={faPhone}
-            />
-            <FontAwesomeIcon
-              className="transition duration-500 transform hover:-translate-y-1 z-50 cursor-pointer no-selecto-bro"
-              icon={faFacebookF}
-            />
-            <FontAwesomeIcon
-              className="transition duration-500 transform hover:-translate-y-1 z-50 cursor-pointer no-selecto-bro"
-              icon={faInstagram}
-            />
+            <a
+              className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
+              href="mailto:blcoskey@gmail.com"
+            >
+              <FontAwesomeIcon className=" no-selecto-bro" icon={faEnvelope} />
+            </a>
+            <a
+              className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
+              href="tel:+27 71 126 6800"
+            >
+              <FontAwesomeIcon className=" no-selecto-bro" icon={faPhone} />
+            </a>
+            <a
+              className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
+              href="https://www.facebook.com/djoburgdjentsZA"
+              target="_blank"
+            >
+              <FontAwesomeIcon className=" no-selecto-bro" icon={faFacebookF} />
+            </a>
+            <a
+              className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
+              href="https://www.instagram.com/djoburgdjents_za"
+              target="_blank"
+            >
+              <FontAwesomeIcon className="no-selecto-bro" icon={faInstagram} />
+            </a>
           </div>
         </div>
       </div>
