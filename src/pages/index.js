@@ -9,7 +9,7 @@ import Gear from "./gear"
 
 const IndexPage = props => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="djoburg djents | home" />
     <div className="mt-32"></div>
     <Home />
     <About />
