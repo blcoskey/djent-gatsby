@@ -6,15 +6,17 @@ import Home from "./home"
 import About from "./about"
 import Contact from "./contact"
 import Gear from "./gear"
+import { topSpacer, bottomSpacer } from "../components/styles"
 
 const IndexPage = props => (
   <Layout>
     <SEO title="djoburg djents | home" />
-    <div className="mt-32"></div>
+    <div className={topSpacer} />
     <Home />
     <About />
     <Gear />
     <Contact />
+    <div className={bottomSpacer} />
   </Layout>
 )
 

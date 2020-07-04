@@ -76,7 +76,7 @@ const Header = ({ darkmode, toggleDarkmode }) => {
 
   return (
     <React.Fragment>
-      <header className="fixed top-16 w-full text-white text-center visible lg:invisible z-50">
+      <header className="fixed w-full text-white text-center visible lg:invisible z-50">
         <div className="flex flex-row justify-between">
           <img
             src={logo2}
@@ -103,9 +103,9 @@ const Header = ({ darkmode, toggleDarkmode }) => {
         </div>
       </header>
       <div
-        className={`fixed h-full w-full transition-opacity duration-500 bg-gradient-peach-purple z-40 ${menuStyle} ${menuVisibility}`}
+        className={`fixed h-screen w-full transition-opacity duration-500 bg-gradient-peach-purple z-40 ${menuStyle} ${menuVisibility}`}
       >
-        <div className="w-full h-full flex flex-col text-center text-3xl mt-40">
+        <div className="w-full h-full flex flex-col text-center text-3xl items-center justify-center">
           <Link
             className="transition duration-500 transform hover:-translate-y-1 p-4 cursor-pointer z-50 no-selecto-bro"
             to="/"
@@ -118,30 +118,28 @@ const Header = ({ darkmode, toggleDarkmode }) => {
           >
             Past Imports
           </Link>
-        </div>
-        <div className="absolute w-full bottom-0">
-          <div className="w-full flex flex-row text-center text-3xl items-end justify-around self-end mb-4">
+          <div className="flex flex-row justify-center text-center">
             <a
-              className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
+              className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro p-5 "
               href="mailto:blcoskey@gmail.com"
             >
               <FontAwesomeIcon className=" no-selecto-bro" icon={faEnvelope} />
             </a>
             <a
-              className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
+              className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro p-5 "
               href="tel:+27 71 126 6800"
             >
               <FontAwesomeIcon className=" no-selecto-bro" icon={faPhone} />
-            </a>
+            </a>{" "}
             <a
-              className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
+              className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro p-5 "
               href="https://www.facebook.com/djoburgdjentsZA"
               target="_blank"
             >
               <FontAwesomeIcon className=" no-selecto-bro" icon={faFacebookF} />
             </a>
             <a
-              className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
+              className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro p-5 "
               href="https://www.instagram.com/djoburgdjents_za"
               target="_blank"
             >

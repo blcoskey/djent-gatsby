@@ -1,11 +1,10 @@
 import React from "react"
+import { headerStyle, paragraphStyle, containerStyle } from "./styles"
 
-const section = ({ header, content, className = "" }) => (
-  <div
-    className={`text-left mt-8 mx-6 bg-white bg-opacity-75 rounded-md z-10 ${className}`}
-  >
-    <h1 className="mx-10 mt-10 mb-5 text-3xl font-bold">{header}</h1>
-    <div className="mx-8 p-4 text-left text-gray-900 text-lg">{content}</div>
+const section = ({ header, content }) => (
+  <div className={containerStyle}>
+    <h1 className={headerStyle}>{header}</h1>
+    <div className={paragraphStyle}>{content}</div>
   </div>
 )
 

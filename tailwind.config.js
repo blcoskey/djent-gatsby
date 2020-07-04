@@ -13,6 +13,9 @@ module.exports = {
       body: ['"Lato"', "sans-serif"],
     },
     extend: {
+      backgroundOpacity: {
+        "85": "0.85",
+      },
       height: {
         "screen-25": "25vh",
         "screen-50": "50vh",

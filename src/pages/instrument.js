@@ -3,6 +3,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { instruments } from "../content"
 import Image from "../components/image"
+import {
+  headerStyle,
+  paragraphStyle,
+  containerStyle,
+  topSpacer,
+  bottomSpacer,
+} from "../components/styles"
 
 const Instrument = ({ location: { pathname } = {} }) => {
   const lastIndex = pathname.lastIndexOf("/")
@@ -12,18 +19,19 @@ const Instrument = ({ location: { pathname } = {} }) => {
   return (
     <Layout>
       <SEO title="Instrument" />
-      <div className="bg-opacity-75 bg-white w-full mt-32 flex flex-col z-10">
-        <h1 className="mx-10 mt-10 mb-3 text-1xl font-bold">{header}</h1>
-        <div className="mx-10 mt-10 mb-3">
+      <div className={topSpacer} />
+      <div className={containerStyle}>
+        <h1 className={headerStyle}>{header}</h1>
+        <div className={paragraphStyle}>
           <span>{blurb}</span>
         </div>
-        <h1 className="mx-10 mt-10 mb-3 text-1xl font-bold">Specs</h1>
+        <h1 className={headerStyle}>Specs</h1>
         {specs.map((x, index) => (
-          <div className="mx-10" key={`spec${index}`}>
+          <div className={paragraphStyle} key={`spec${index}`}>
             <span>{x}</span>
           </div>
         ))}
-        <h1 className="mx-10 mt-10 mb-3 text-1xl font-bold">Images</h1>
+        <h1 className={headerStyle}>Images</h1>
         {images.map((x, index) => (
           <Image
             filename={x}
@@ -33,6 +41,7 @@ const Instrument = ({ location: { pathname } = {} }) => {
           />
         ))}
       </div>
+      <div className={bottomSpacer} />
     </Layout>
   )
 }

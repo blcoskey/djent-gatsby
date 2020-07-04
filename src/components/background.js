@@ -28,7 +28,7 @@ const BackgroundSection = ({ className, children }) => (
             backgroundSize: "cover",
             width: "100%",
             height: "100vh",
-            zIndex: -1,
+            zIndex: -10,
           }}
           fluid={imageData}
         />

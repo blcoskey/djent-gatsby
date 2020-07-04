@@ -2,8 +2,8 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
 import MobileHeader from "./mobileHeader"
+import Header from "./header"
 import Particles from "react-particles-js"
 import particleConfig from "./particles-config"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -26,19 +26,19 @@ const Layout = ({ children }) => {
 
   return (
     <div className="flex flex-col w-full h-screen">
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <MobileHeader
-        siteTitle={data.site.siteMetadata.title}
-        darkmode={darkmode}
-        toggleDarkmode={() => setDarkmode(!darkmode)}
-      />
       <Background />
       <Particles
         canvasClassName="fixed w-full h-full z-0"
         params={particleConfig}
       />
+      <Header siteTitle={data.site.siteMetadata.title}></Header>
+      <MobileHeader
+        siteTitle={data.site.siteMetadata.title}
+        darkmode={darkmode}
+        toggleDarkmode={() => setDarkmode(!darkmode)}
+      />
 
-      <main className="flex flex-grow w-full flex-col bg-opacity-0 z-10 bg-transparent bg-fixed">
+      <main className="flex flex-grow flex-wrap w-full bg-opacity-0 z-10 bg-transparent bg-fixed justify-center">
         {children}
       </main>
 
