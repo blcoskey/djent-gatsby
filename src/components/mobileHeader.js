@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons"
 
-const Header = ({ darkmode, toggleDarkmode }) => {
+const Header = () => {
   const [expand, setExpand] = useState("init")
   const [menuVisibility, setMenuVisiblity] = useState("invisible")
   const [menuStyle, setMenuStyle] = useState("opacity-0")
@@ -45,14 +45,7 @@ const Header = ({ darkmode, toggleDarkmode }) => {
 
   const getLogoRotation = () => {
     if (expand === "close" || expand === "init") {
-      if (darkmode) {
-        return "rotate-75"
-      }
       return "rotate-360"
-    }
-
-    if (darkmode) {
-      return "rotate-75"
     }
 
     return "rotate-0"
@@ -76,7 +69,7 @@ const Header = ({ darkmode, toggleDarkmode }) => {
 
   return (
     <React.Fragment>
-      <header className="fixed w-full text-white text-center visible lg:invisible z-50">
+      <header className="fixed top-0 w-full text-white text-center visible lg:invisible z-50">
         <div className="flex flex-row justify-between">
           <Image
             filename="logo-round-black.png"
@@ -86,7 +79,6 @@ const Header = ({ darkmode, toggleDarkmode }) => {
                 ? `w-24 m-5 ml-6 transition-transform duration-300 transform ${getLogoRotation()}`
                 : `w-24 m-5 ml-6 transition-transform duration-300 transform ${getLogoRotation()}`
             }
-            onClick={toggleDarkmode}
           />
           <div className="h-12 flex self-center text-black text-4xl translate-y-0 cursor-pointer">
             <FontAwesomeIcon
@@ -130,7 +122,7 @@ const Header = ({ darkmode, toggleDarkmode }) => {
               href="tel:+27 71 126 6800"
             >
               <FontAwesomeIcon className=" no-selecto-bro" icon={faPhone} />
-            </a>{" "}
+            </a>
             <a
               className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro p-5 "
               href="https://www.facebook.com/djoburgdjentsZA"

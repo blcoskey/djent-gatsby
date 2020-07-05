@@ -1,6 +1,5 @@
 import React from "react"
 import Section from "../components/section"
-import { Link } from "gatsby"
 
 const header = "Darkglass"
 const content = (
@@ -11,14 +10,14 @@ const content = (
       push the boundaries of sonic possibility (and, therefore, that good d j e
       n t ) daily.
     </span>
-    <Link
+    <a
       className="text-blue-600 cursor-pointer"
-      to="https://www.darkglass.com/creations/#pedals"
+      href="https://www.darkglass.com/creations/#pedals"
       target="_blank"
       rel="noreferrer"
     >
       View Darkglass Catalog
-    </Link>
+    </a>
   </div>
 )
 

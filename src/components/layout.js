@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -13,7 +13,6 @@ import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import Background from "./background"
 
 const Layout = ({ children }) => {
-  const [darkmode, setDarkmode] = useState(false)
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -32,19 +31,13 @@ const Layout = ({ children }) => {
         params={particleConfig}
       />
       <Header siteTitle={data.site.siteMetadata.title}></Header>
-      <MobileHeader
-        siteTitle={data.site.siteMetadata.title}
-        darkmode={darkmode}
-        toggleDarkmode={() => setDarkmode(!darkmode)}
-      />
-
-      <main className="flex flex-grow flex-wrap w-full bg-opacity-0 z-10 bg-transparent bg-fixed justify-center">
+      <MobileHeader siteTitle={data.site.siteMetadata.title} />
+      <main className="flex flex-grow flex-wrap w-full bg-opacity-0 z-10 bg-transparent justify-center flex-shrink-0">
         {children}
       </main>
-
-      <footer className="text-white text-center w-full bg-gray-800 text-1xl flex flex-col z-10">
+      <footer className="text-white text-center w-full bg-gray-800 text-1xl flex flex-col z-10 self-end mt-auto flex-shrink-0">
         <div className="flex flex-col">
-          <div className="w-full flex flex-row text-center  items-end justify-around self-end mb-2 mt-4">
+          <div className="w-full flex flex-row text-center justify-evenly mb-2 mt-4 lg:w-1/2 self-center">
             <a
               className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
               href="mailto:blcoskey@gmail.com"

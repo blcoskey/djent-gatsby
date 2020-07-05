@@ -10,7 +10,7 @@ import { topSpacer, bottomSpacer } from "../components/styles"
 
 const IndexPage = props => (
   <Layout>
-    <SEO title="djoburg djents | home" />
+    <SEO title="Home" />
     <div className={topSpacer} />
     <Home />
     <About />
