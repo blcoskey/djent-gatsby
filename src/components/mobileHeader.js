@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import logo2 from "../images/logo-round-black.png"
+import Image from "./image"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
@@ -78,8 +78,8 @@ const Header = ({ darkmode, toggleDarkmode }) => {
     <React.Fragment>
       <header className="fixed w-full text-white text-center visible lg:invisible z-50">
         <div className="flex flex-row justify-between">
-          <img
-            src={logo2}
+          <Image
+            filename="logo-round-black.png"
             alt="djent-logo"
             className={
               expand === "close" || expand === "init"
@@ -135,6 +135,7 @@ const Header = ({ darkmode, toggleDarkmode }) => {
               className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro p-5 "
               href="https://www.facebook.com/djoburgdjentsZA"
               target="_blank"
+              rel="noreferrer"
             >
               <FontAwesomeIcon className=" no-selecto-bro" icon={faFacebookF} />
             </a>
@@ -142,6 +143,7 @@ const Header = ({ darkmode, toggleDarkmode }) => {
               className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro p-5 "
               href="https://www.instagram.com/djoburgdjents_za"
               target="_blank"
+              rel="noreferrer"
             >
               <FontAwesomeIcon className="no-selecto-bro" icon={faInstagram} />
             </a>

@@ -15,6 +15,7 @@ const content = (
       className="text-blue-600 cursor-pointer"
       to="https://www.darkglass.com/creations/#pedals"
       target="_blank"
+      rel="noreferrer"
     >
       View Darkglass Catalog
     </Link>

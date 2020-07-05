@@ -99,7 +99,6 @@ export const instruments = [
       "Overload Guitars is a boutique-level custom shop based in Rome, Italy. All the instruments are fully customizable & hand-built from materials of the highest quality. The Themis is their headless model, and is available as anything from a strat-scale 6-string to a monstrous multiscale 8.",
     header: "OVERLOAD THEMIS 7, HAWAII GREENBURST",
     specs: [
-      ,
       '25.5"-27" multiscale spread',
       "Figured maple top, wenge veneer, swamp ash wings",
       "5-piece maple/wenge neck, neck-thru",

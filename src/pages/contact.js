@@ -3,7 +3,6 @@ import Section from "../components/section"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons"
-import { Link } from "gatsby"
 
 const header = "Contact"
 const content = (
@@ -32,6 +31,7 @@ const content = (
         className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
         href="https://www.facebook.com/djoburgdjentsZA"
         target="_blank"
+        rel="noreferrer"
       >
         <FontAwesomeIcon className=" no-selecto-bro" icon={faFacebookF} />
       </a>
@@ -39,6 +39,7 @@ const content = (
         className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
         href="https://www.instagram.com/djoburgdjents_za"
         target="_blank"
+        rel="noreferrer"
       >
         <FontAwesomeIcon className="no-selecto-bro" icon={faInstagram} />
       </a>
