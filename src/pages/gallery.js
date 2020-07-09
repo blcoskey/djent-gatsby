@@ -20,11 +20,12 @@ const Gallery = () => (
         <div key={name} className={containerStyle}>
           <h1 className={headerStyle}>{header}</h1>
           <div className="text-left text-gray-900 text-lg">
-            <Image filename={images[0]} alt={alt} className="min-h-full" />
+            <Image filename={images[0]} alt={alt} />
           </div>
           <Link
             className="text-blue-600 cursor-pointer"
             to={`/instrument/${name}`}
+            className="object-center object-contain"
           >
             <h1 className={headerStyle}>View Details</h1>
           </Link>

@@ -4,7 +4,7 @@ export const instruments = [
     images: [
       "instruments/bass-gtr-1.jpg",
       "instruments/bass-gtr-2.jpg",
-      "instruments/bass-gtr-2.jpg",
+      "instruments/bass-gtr-3.jpg",
     ],
     alt: "djent 6 string bass ormsby south africa",
     blurb:
