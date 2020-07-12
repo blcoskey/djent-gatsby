@@ -75,15 +75,21 @@ body {
   }
 }
 
-.bg-gradient-peach-purple {
+.bg-gradient-dark {
   background-image: linear-gradient(
-    #eea4a1,
-    #e896a2,
-    #e182a0,
-    #d86c9e,
-    #d86c9e,
-    #d86c9e,
-    #d86c9e
+    to bottom,
+    #000000,
+    #101010,
+    #1a1a1a,
+    #232323,
+    #2d2d2d,
+    #353535,
+    #3e3e3e,
+    #474747,
+    #515151,
+    #5c5c5c,
+    #666666,
+    #717171
   );
 }
 

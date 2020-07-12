@@ -11,7 +11,7 @@ const content = (
       n t ) daily.
     </span>
     <a
-      className="text-blue-600 cursor-pointer"
+      className="text-blue-600 cursor-pointer no-selecto-bro"
       href="https://www.darkglass.com/creations/#pedals"
       target="_blank"
       rel="noreferrer"
@@ -21,6 +21,8 @@ const content = (
   </div>
 )
 
-const About = () => <Section {...{ header, content }} />
+const About = () => (
+  <Section {...{ header, content, filename: "darkglass.jpg" }} />
+)
 
 export default About

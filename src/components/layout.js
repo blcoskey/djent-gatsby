@@ -25,9 +25,9 @@ const Layout = ({ children }) => {
 
   return (
     <div className="flex flex-col w-full h-screen">
-      <Background />
+      {/* <Background /> */}
       <Particles
-        canvasClassName="fixed w-full h-full z-0"
+        canvasClassName="fixed w-full h-full z-0 bg-gradient-dark"
         params={particleConfig}
       />
       <Header siteTitle={data.site.siteMetadata.title}></Header>
@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
       <main className="flex flex-grow flex-wrap w-full bg-opacity-0 z-10 bg-transparent justify-center flex-shrink-0">
         {children}
       </main>
-      <footer className="text-white text-center w-full bg-gray-800 text-1xl flex flex-col z-10 self-end mt-auto flex-shrink-0">
+      <footer className="text-white text-center w-full bg-black-800 text-1xl flex flex-col z-10 self-end mt-auto flex-shrink-0">
         <div className="flex flex-col">
           <div className="w-full flex flex-row text-center justify-evenly mb-2 mt-4 lg:w-1/2 self-center">
             <a

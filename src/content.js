@@ -90,9 +90,9 @@ export const instruments = [
   {
     name: "overload-themis",
     images: [
+      "instruments/themis-3.jpg",
       "instruments/themis-1.jpg",
       "instruments/themis-2.jpg",
-      "instruments/themis-3.jpg",
     ],
     alt: "djent 7 string headless guitar south africa",
     blurb:

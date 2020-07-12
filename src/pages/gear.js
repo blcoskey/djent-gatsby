@@ -3,6 +3,7 @@ import Section from "../components/section"
 import { Link } from "gatsby"
 
 const header = "Gear"
+const filename = "guitars.jpg"
 const content = (
   <div className="flex flex-col">
     <span>
@@ -11,12 +12,12 @@ const content = (
       and showcase them on African soil; not a single generic strat or les paul
       copy in sight!
     </span>
-    <Link className="text-blue-600 cursor-pointer" to="/gallery">
+    <Link className="text-blue-600 cursor-pointer no-selecto-bro" to="/gallery">
       See past imports
     </Link>
   </div>
 )
 
-const Gear = props => <Section {...{ header, content }} />
+const Gear = props => <Section {...{ header, content, filename }} />
 
 export default Gear

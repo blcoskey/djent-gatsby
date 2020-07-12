@@ -1,7 +1,7 @@
 import React from "react"
 import Section from "../components/section"
 
-const header = "Welcome to Djoburg Djents!"
+const header = "About Us"
 const content = (
   <span>
     We are a collective of gear enthusiasts aiming to provide South African
@@ -11,6 +11,8 @@ const content = (
   </span>
 )
 
-const Home = props => <Section {...{ header, content }} />
+const Home = props => (
+  <Section {...{ header, content, filename: "louis.jpeg" }} />
+)
 
 export default Home

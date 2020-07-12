@@ -8,7 +8,7 @@ import {
   headerStyle,
   topSpacer,
   bottomSpacer,
-  containerStyle,
+  galleryContainerStyle,
 } from "../components/styles"
 
 const Gallery = () => (
@@ -17,15 +17,18 @@ const Gallery = () => (
     <div className={topSpacer} />
     {instruments.map(({ header, images, name, alt = [] }) => {
       return (
-        <div key={name} className={containerStyle}>
-          <h1 className={headerStyle}>{header}</h1>
-          <div className="text-left text-gray-900 text-lg">
-            <Image filename={images[0]} alt={alt} />
-          </div>
+        <div key={name} className={galleryContainerStyle}>
+          <h1 className={`${headerStyle} w-full md:w-1/2 lg:w-2/5`}>
+            {header}
+          </h1>
+          <Image
+            filename={images[0]}
+            alt={alt}
+            className="w-full md:w-1/2 lg:w-2/5"
+          />
           <Link
-            className="text-blue-600 cursor-pointer"
             to={`/instrument/${name}`}
-            className="object-center object-contain"
+            className="object-center object-contain text-blue-600 cursor-pointer w-full"
           >
             <h1 className={headerStyle}>View Details</h1>
           </Link>
