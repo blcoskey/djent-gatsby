@@ -28,7 +28,7 @@ const Gallery = () => (
           />
           <Link
             to={`/instrument/${name}`}
-            className="object-center object-contain text-blue-600 cursor-pointer w-full"
+            className="object-center object-contain text-blue-600 cursor-pointer w-full no-selecto-bro"
           >
             <h1 className={headerStyle}>View Details</h1>
           </Link>
