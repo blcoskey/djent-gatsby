@@ -9,7 +9,7 @@ const DarkglassBackground = ({ className, children }) => (
       query {
         desktop: file(relativePath: { eq: "darkglass.jpg" }) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
+            fluid(quality: 60, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -21,10 +21,8 @@ const DarkglassBackground = ({ className, children }) => (
       return (
         <BackgroundImage
           Tag="div"
-          style={{
-            zIndex: -10,
-            opacity: 0,
-          }}
+          className="absolute left-0 top-0 w-full h-full"
+          style={{ zIndex: -10 }}
           fluid={imageData}
         />
       )

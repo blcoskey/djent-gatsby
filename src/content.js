@@ -48,7 +48,11 @@ export const instruments = [
   },
   {
     name: "ormsby-goliath-gtr-8",
-    images: ["instruments/goliath-gtr-1.jpg", "instruments/goliath-gtr-2.jpg"],
+    images: [
+      "instruments/goliath-gtr-0.jpg",
+      "instruments/goliath-gtr-1.jpg",
+      "instruments/goliath-gtr-2.jpg",
+    ],
     alt: "djent headless 8 string south africa",
     blurb:
       "The Goliath is Ormsby's headless guitar, with the GTR iterations also being manufactured at WMI. The chambered bodies are light & resonant with an ergonomic shape, and the custom-spec pickups are very articulate. This particular Goliath GTR is from run 9.",
@@ -90,9 +94,9 @@ export const instruments = [
   {
     name: "overload-themis",
     images: [
+      "instruments/themis-3.jpg",
       "instruments/themis-1.jpg",
       "instruments/themis-2.jpg",
-      "instruments/themis-3.jpg",
     ],
     alt: "djent 7 string headless guitar south africa",
     blurb:

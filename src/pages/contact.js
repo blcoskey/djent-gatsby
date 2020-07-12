@@ -5,6 +5,7 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons"
 
 const header = "Contact"
+const filename = "welcome.jpg"
 const content = (
   <div className="flex flex-col">
     <div>
@@ -17,7 +18,7 @@ const content = (
     <div className="flex flex-row justify-between text-3xl">
       <a
         className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
-        href="mailto:blcoskey@gmail.com"
+        href="mailto:info@djoburgdjents.co.za"
       >
         <FontAwesomeIcon className=" no-selecto-bro" icon={faEnvelope} />
       </a>
@@ -47,6 +48,8 @@ const content = (
   </div>
 )
 
-const Home = props => <Section {...{ header, content }} className="mb-12" />
+const Home = props => (
+  <Section {...{ header, content, filename }} className="mb-12" />
+)
 
 export default Home
