@@ -4,6 +4,8 @@
 
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css?family=B612&display=swap");
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -30,10 +32,9 @@ body,
 
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "B612", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
