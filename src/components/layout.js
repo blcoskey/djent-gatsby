@@ -43,7 +43,7 @@ const Layout = ({ children }) => {
           <div className="w-full flex flex-row text-center justify-evenly mb-2 mt-4 lg:w-1/2 self-center">
             <a
               className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
-              href="mailto:blcoskey@gmail.com"
+              href="mailto:info@djoburgdjents.co.za"
             >
               <FontAwesomeIcon className=" no-selecto-bro" icon={faEnvelope} />
             </a>

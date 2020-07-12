@@ -24,7 +24,7 @@ const IndexPage = props => (
       <h1 className={`${headerStyle}`}>Welcome to Djoburg Djents</h1>
       <Image filename="darkglass-logo.png" className="w-full md:w-2/5" />
       <h1 className="mx-12 mt-10 mb-5 font-bold text-lg italic lg:text-1xl">
-        Official Darkglass Distributer
+        Official Darkglass Distributor
       </h1>
     </div>
     <Home />

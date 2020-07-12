@@ -18,7 +18,7 @@ const content = (
     <div className="flex flex-row justify-between text-3xl">
       <a
         className="transition duration-500 transform hover:-translate-y-1 cursor-pointer no-selecto-bro"
-        href="mailto:blcoskey@gmail.com"
+        href="mailto:info@djoburgdjents.co.za"
       >
         <FontAwesomeIcon className=" no-selecto-bro" icon={faEnvelope} />
       </a>

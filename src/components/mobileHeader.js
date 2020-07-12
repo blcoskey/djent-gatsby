@@ -114,7 +114,7 @@ const Header = () => {
             Past Imports
           </Link>
           <div className="flex flex-row justify-center text-center">
-            <a className={faIconStyle} href="mailto:blcoskey@gmail.com">
+            <a className={faIconStyle} href="mailto:info@djoburgdjents.co.za">
               <FontAwesomeIcon className=" no-selecto-bro" icon={faEnvelope} />
             </a>
             <a className={faIconStyle} href="tel:+27 71 126 6800">
