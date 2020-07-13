@@ -66,6 +66,10 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          name: `og:image`,
+          content: { louis },
+        },
+        {
           name: `og:image:url`,
           content: { louis },
         },
