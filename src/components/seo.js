@@ -65,6 +65,10 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          name: `og:image:url`,
+          content: `http://www.djoburgdjents.co.za/static/9dc9ce74d9cbbbdaa79ed564f957b91c/9842e/louis.jpg`,
+        },
+        {
           "http-equiv": `ScreenOrientation`,
           content: `autoRotate:disabled`,
         },
