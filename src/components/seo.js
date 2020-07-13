@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import louis from "../images/louis.jpeg"
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -13,6 +12,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            url
           }
         }
       }
@@ -29,6 +29,10 @@ function SEO({ description, lang, meta, title }) {
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
+        {
+          property: `og:url`,
+          content: site.siteMetadata.url,
+        },
         {
           name: `description`,
           content: metaDescription,
@@ -66,12 +70,16 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
-          name: `og:image`,
-          content: { louis },
+          property: `og:image`,
+          content: `http://www.djoburgdjents.co.za/static/louis-9dc9ce74d9cbbbdaa79ed564f957b91c.jpeg`,
         },
         {
-          name: `og:image:url`,
-          content: { louis },
+          property: "og:image:width",
+          content: 1200,
+        },
+        {
+          property: "og:image:height",
+          content: 1200,
         },
         {
           "http-equiv": `ScreenOrientation`,
