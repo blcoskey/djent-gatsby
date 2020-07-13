@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import louis from "../images/louis.jpeg"
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -66,7 +67,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `og:image:url`,
-          content: `http://www.djoburgdjents.co.za/static/9dc9ce74d9cbbbdaa79ed564f957b91c/9842e/louis.jpg`,
+          content: { louis },
         },
         {
           "http-equiv": `ScreenOrientation`,
