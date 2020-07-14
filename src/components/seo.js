@@ -74,14 +74,6 @@ function SEO({ description, lang, meta, title }) {
           content: `http://www.djoburgdjents.co.za/static/louis-9dc9ce74d9cbbbdaa79ed564f957b91c.jpeg`,
         },
         {
-          property: "og:image:width",
-          content: 1200,
-        },
-        {
-          property: "og:image:height",
-          content: 1200,
-        },
-        {
           "http-equiv": `ScreenOrientation`,
           content: `autoRotate:disabled`,
         },
