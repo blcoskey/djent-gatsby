@@ -71,7 +71,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `http://www.djoburgdjents.co.za/static/louis-9dc9ce74d9cbbbdaa79ed564f957b91c.jpeg`,
+          content: `https://www.djoburgdjents.co.za/static/louis-9dc9ce74d9cbbbdaa79ed564f957b91c.jpeg`,
         },
         {
           "http-equiv": `ScreenOrientation`,

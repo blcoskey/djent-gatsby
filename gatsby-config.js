@@ -3,7 +3,7 @@ module.exports = {
     title: `Djoburg Djents`,
     description: `Djent gear experience`,
     author: `@blcoskey`,
-    url: `http://www.djoburgdjents.co.za`,
+    url: `https://www.djoburgdjents.co.za`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
