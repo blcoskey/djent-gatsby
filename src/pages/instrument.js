@@ -32,11 +32,11 @@ const Instrument = ({ location: { pathname } = {} }) => {
       </div>
       <div className={galleryContainerStyle}>
         <h1 className={headerStyle}>Specs</h1>
-        {specs.map((x, index) => (
-          <div className={paragraphStyle} key={`spec${index}`}>
-            <span>{x}</span>
-          </div>
-        ))}
+        <ol className="list-disc self-center px-5">
+          {specs.map((x, index) => (
+            <li key={`spec${index}`}>{x}</li>
+          ))}
+        </ol>
         <h1 className={headerStyle}>Images</h1>
         <div className="w-full flex flex-wrap justify-center items-center">
           {images.slice(1).map((x, index) => (
