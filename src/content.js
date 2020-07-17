@@ -44,7 +44,6 @@ export const instruments = [
       "4-way rotary pickup selector for series/parallel",
       "Hipshot hardware",
     ],
-    link: "http://www.overloadguitars.com",
   },
   {
     name: "ormsby-goliath-gtr-8",
@@ -113,6 +112,5 @@ export const instruments = [
       "Push-pull for coil-splitting",
       "Technology4Musicians monorail bridges",
     ],
-    link: "http://www.overloadguitars.com",
   },
 ]
