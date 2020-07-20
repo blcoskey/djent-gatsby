@@ -1,21 +1,18 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "./layout"
+import SEO from "./seo"
 import { instruments } from "../content"
-import Image from "../components/image"
+import Image from "./image"
 import {
   headerStyle,
-  paragraphStyle,
   galleryContainerStyle,
   containerStyle,
   topSpacer,
   bottomSpacer,
 } from "../components/styles"
 
-const Instrument = ({ location: { pathname } = {} }) => {
-  const lastIndex = pathname.lastIndexOf("/")
-  const item = pathname.slice(lastIndex + 1, pathname.length)
-  const instrument = instruments.find(({ name }) => name === item)
+const Instrument = ({ id }) => {
+  const instrument = instruments.find(({ name }) => name === id)
   const { images = [], header, blurb, specs = [], alt } = instrument || {}
   const [firstImage = ""] = images
 

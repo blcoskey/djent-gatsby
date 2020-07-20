@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Image from "./image"
-import { Link } from "gatsby"
+import { Link } from "@reach/router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faEnvelope,

@@ -2,10 +2,10 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Home from "./home"
-import About from "./about"
-import Contact from "./contact"
-import Gear from "./gear"
+import Home from "../components/home"
+import About from "../components/about"
+import Contact from "../components/contact"
+import Gear from "../components/gear"
 import {
   topSpacer,
   bottomSpacer,
