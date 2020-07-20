@@ -1,6 +1,6 @@
 import React from "react"
 import logo from "../images/logo.png"
-import { Link } from "gatsby"
+import { Link } from "@reach/router"
 
 const Header = () => (
   <header className="fixed top-0 w-full text-white text-center invisible lg:visible z-40">

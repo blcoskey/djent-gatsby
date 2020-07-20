@@ -78,7 +78,7 @@ const config = {
         enable: true,
         mode: "grab",
       },
-      resize: false,
+      resize: true,
     },
     modes: {
       grab: {

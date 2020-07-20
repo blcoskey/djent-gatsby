@@ -1,5 +1,5 @@
 import React from "react"
-import Section from "../components/section"
+import Section from "./section"
 
 const header = "Darkglass"
 const content = (

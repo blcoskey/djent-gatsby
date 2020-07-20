@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Djoburg Djents`,
-    description: `Djent instruments.`,
-    author: `@gatsbyjs`,
+    description: `Djent gear experience`,
+    author: `@blcoskey`,
+    url: `https://www.djoburgdjents.co.za`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

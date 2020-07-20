@@ -1,21 +1,18 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "./layout"
+import SEO from "./seo"
 import { instruments } from "../content"
-import Image from "../components/image"
+import Image from "./image"
 import {
   headerStyle,
-  paragraphStyle,
   galleryContainerStyle,
   containerStyle,
   topSpacer,
   bottomSpacer,
 } from "../components/styles"
 
-const Instrument = ({ location: { pathname } = {} }) => {
-  const lastIndex = pathname.lastIndexOf("/")
-  const item = pathname.slice(lastIndex + 1, pathname.length)
-  const instrument = instruments.find(({ name }) => name === item)
+const Instrument = ({ id }) => {
+  const instrument = instruments.find(({ name }) => name === id)
   const { images = [], header, blurb, specs = [], alt } = instrument || {}
   const [firstImage = ""] = images
 
@@ -32,11 +29,11 @@ const Instrument = ({ location: { pathname } = {} }) => {
       </div>
       <div className={galleryContainerStyle}>
         <h1 className={headerStyle}>Specs</h1>
-        {specs.map((x, index) => (
-          <div className={paragraphStyle} key={`spec${index}`}>
-            <span>{x}</span>
-          </div>
-        ))}
+        <ol className="list-disc self-center px-5">
+          {specs.map((x, index) => (
+            <li key={`spec${index}`}>{x}</li>
+          ))}
+        </ol>
         <h1 className={headerStyle}>Images</h1>
         <div className="w-full flex flex-wrap justify-center items-center">
           {images.slice(1).map((x, index) => (

@@ -12,6 +12,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            url
           }
         }
       }
@@ -28,6 +29,10 @@ function SEO({ description, lang, meta, title }) {
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
+        {
+          property: `og:url`,
+          content: site.siteMetadata.url,
+        },
         {
           name: `description`,
           content: metaDescription,
@@ -63,6 +68,10 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: `https://www.djoburgdjents.co.za/static/louis-9dc9ce74d9cbbbdaa79ed564f957b91c.jpeg`,
         },
         {
           "http-equiv": `ScreenOrientation`,
